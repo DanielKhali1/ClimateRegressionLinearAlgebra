@@ -18,9 +18,9 @@ heights = []
 # for each unique ID (time series)
 for i in range(size(ids_1)):
     # append x position of time series to a list
-    xPositions.append(dat[dat[:,1] == ids_1[i],4][0])
+    xPositions.append(dat[dat[:,1] == ids_1[i],3][0])
     # append y position of time series to a list
-    yPositions.append(dat[dat[:,1] == ids_1[i],5][0])
+    yPositions.append(dat[dat[:,1] == ids_1[i],4][0])
     
     t = dat[dat[:,1] == ids_1[i],9]  ## time instances corresponding to this id
     h = dat[dat[:,1] == ids_1[i],15] ## corresponding height measurements
